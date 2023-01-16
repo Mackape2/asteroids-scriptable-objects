@@ -22,14 +22,16 @@ namespace UI
         [Header("Laser:")]
         [SerializeField] private TextMeshProUGUI _laserText;
         
+        public SettingsManager Manager;
+        
         private void Start()
         {
-            SetHealthText($"Health: {_healthVar.Value}");
+            SetHealthText($"Health: {Manager.MaxHealth.ToString()}");
         }
 
         public void OnHealthChanged(IntReference newValue)
         {
-            SetHealthText($"Health: {newValue.GetValue()}");
+            SetHealthText($"Health: {Manager.CurrentHealth.ToString()}");
         }
 
         private void SetHealthText(string text)

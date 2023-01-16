@@ -11,6 +11,7 @@ namespace Ship
         [SerializeField] private IntReference _healthRef;
         [SerializeField] private IntObservable _healthObservable;
         
+        public SettingsManager Manager;
         private void OnCollisionEnter2D(Collision2D other)
         {
             if (string.Equals(other.gameObject.tag, "Asteroid"))
@@ -19,8 +20,9 @@ namespace Ship
                 // TODO can we bake this into one call?
                 //_healthRef.ApplyChange(-1);
                 //_onHealthChangedEvent.Raise(_healthRef);
-                _healthObservable.ApplyChange(-1);
+                Manager.damageTaken += 1;
             }
+            Debug.Log(Manager.damageTaken.ToString());
         }
     }
 }

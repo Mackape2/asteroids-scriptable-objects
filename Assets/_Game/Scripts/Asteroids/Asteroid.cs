@@ -77,7 +77,7 @@ namespace Asteroids
         {
             if (Manager == null)
                 return;
-            var force = Random.Range(Manager._minForce, Manager._maxForce);
+            var force = Random.Range(Manager.MinForce, Manager.MaxForce);
             _rigidbody.AddForce( _direction * force, ForceMode2D.Impulse);
         }
 
@@ -85,7 +85,7 @@ namespace Asteroids
         {
             if(Manager == null)
                 return;
-            var torque = Random.Range(Manager._minTorque, Manager._maxTorque);
+            var torque = Random.Range(Manager.MinTorque, Manager.MaxTorque);
             var roll = Random.Range(0, 2);
 
             if (roll == 0)
@@ -98,7 +98,7 @@ namespace Asteroids
         {
             if(Manager == null)
                 return;
-            var size = Random.Range(Manager._minSize, Manager._maxSize);
+            var size = Random.Range(Manager.MinSize, Manager.MaxSize);
             _shape.localScale = new Vector3(size, size, 0f);
         }
     }

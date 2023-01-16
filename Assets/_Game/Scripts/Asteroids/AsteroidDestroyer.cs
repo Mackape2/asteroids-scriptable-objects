@@ -13,16 +13,6 @@ namespace Asteroids
             Clear();
         }
 
-        public void Add()
-        {
-            
-        }
-
-        public void Remove()
-        {
-            
-        }
-
         public Asteroid Get(int id)
         {
             return null;

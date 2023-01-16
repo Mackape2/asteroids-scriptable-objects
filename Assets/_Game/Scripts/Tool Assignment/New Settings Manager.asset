@@ -12,3 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0421dc84ca063d4dba1277bededa480, type: 3}
   m_Name: New Settings Manager
   m_EditorClassIdentifier: 
+  MinForce: 0.233
+  MaxForce: 6.02
+  MinSize: 0.25
+  MaxSize: 0.955
+  MinTorque: 0.235
+  MaxTorque: 0.729
+  MaxHealth: 20
+  damageTaken: 0
