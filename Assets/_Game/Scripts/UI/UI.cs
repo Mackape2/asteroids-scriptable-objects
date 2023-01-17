@@ -31,7 +31,7 @@ namespace UI
 
         public void OnHealthChanged(IntReference newValue)
         {
-            SetHealthText($"Health: {Manager.CurrentHealth.ToString()}");
+            SetHealthText($"Health: {_healthVar}");
         }
 
         private void SetHealthText(string text)

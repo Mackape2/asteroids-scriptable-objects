@@ -3,7 +3,10 @@ guid: 8049130da1c3b374a8385482151b2e98
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - _onHealthChangedEvent: {fileID: 11400000, guid: 1c89cb8edd31962449ecaa94187a07fc, type: 2}
+  - _healthObservable: {fileID: 11400000, guid: a29c193f4c943534ab4728aacaf9839a, type: 2}
+  - Manager: {fileID: 11400000, guid: 1a73d2d05049cd54a87fdfb05535f98d, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -6,12 +6,16 @@ namespace Ship
 {
     public class Hull : MonoBehaviour
     {
+        //With how the code is set up, I can't combine the health of the ship with the UI without changing the code.
+        //If you wish to use the health meter, you'll have to restructure and clean up your code.
+
         //[SerializeField] private IntVariable _health;
         [SerializeField] private ScriptableEventIntReference _onHealthChangedEvent;
         [SerializeField] private IntReference _healthRef;
         [SerializeField] private IntObservable _healthObservable;
-        
+
         public SettingsManager Manager;
+        
         private void OnCollisionEnter2D(Collision2D other)
         {
             if (string.Equals(other.gameObject.tag, "Asteroid"))
@@ -20,9 +24,9 @@ namespace Ship
                 // TODO can we bake this into one call?
                 //_healthRef.ApplyChange(-1);
                 //_onHealthChangedEvent.Raise(_healthRef);
-                Manager.damageTaken += 1;
+                _healthObservable.ApplyChange(-1);
             }
-            Debug.Log(Manager.damageTaken.ToString());
+            
         }
     }
 }
