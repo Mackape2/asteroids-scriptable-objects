@@ -1,3 +1,4 @@
+using Tool_Assignment;
 using UnityEditor.VersionControl;
 using UnityEngine;
 using Variables;
@@ -14,6 +15,9 @@ namespace Ship
         [SerializeField] private float _rotationPowerSimple;
 
         private Rigidbody2D _rigidbody;
+        
+        public SettingsManager Manager;
+        public SettingsCalculations Calculations;
         
         private void FixedUpdate()
         {
@@ -39,17 +43,17 @@ namespace Ship
     
         public void Throttle()
         {
-            _rigidbody.AddForce(transform.up * _throttlePower.Value, ForceMode2D.Force);
+            _rigidbody.AddForce(transform.up * Manager.Throttle, ForceMode2D.Force);
         }
 
         public void SteerLeft()
         {
-            _rigidbody.AddTorque(_rotationPower.Value, ForceMode2D.Force);
+            _rigidbody.AddTorque(Manager.Roatation, ForceMode2D.Force);
         }
 
         public void SteerRight()
         {
-            _rigidbody.AddTorque(-_rotationPower.Value, ForceMode2D.Force);
+            _rigidbody.AddTorque(-Manager.Roatation, ForceMode2D.Force);
         }
     }
 }

@@ -19,3 +19,5 @@ MonoBehaviour:
   MinTorque: 0.235
   MaxTorque: 0.729
   MaxHealth: 25
+  Throttle: 7
+  Roatation: 3

@@ -6,16 +6,15 @@ namespace Tool_Assignment
     public class SettingsCalculations : MonoBehaviour
     {
         public SettingsManager Manager;
-        public int test;
+        public int CurrentHealth;
 
         private void Start()
         {
-            test = Manager.MaxHealth;
-            //Manager.damageTaken = 0;
+            CurrentHealth = Manager.MaxHealth;
         }
         public void SetHealth()
         {
-            test -= 1;
+            CurrentHealth -= 1;
         }
     }
 }

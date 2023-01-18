@@ -27,7 +27,7 @@ namespace Ship
                 //_onHealthChangedEvent.Raise(_healthRef);
                 //_healthObservable.ApplyChange(-1);
                 Calculations.SetHealth();
-                _onHealthChangedEvent.Raise(new IntReference(Calculations.test));
+                _onHealthChangedEvent.Raise(new IntReference(Calculations.CurrentHealth));
 
 
 
