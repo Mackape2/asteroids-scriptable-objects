@@ -1,6 +1,7 @@
 ﻿using System;
 using DefaultNamespace.ScriptableEvents;
 using TMPro;
+using Tool_Assignment;
 using UnityEngine;
 using Variables;
 
@@ -23,6 +24,7 @@ namespace UI
         [SerializeField] private TextMeshProUGUI _laserText;
         
         public SettingsManager Manager;
+        public SettingsCalculations Calculations;
         
         private void Start()
         {
@@ -31,7 +33,8 @@ namespace UI
 
         public void OnHealthChanged(IntReference newValue)
         {
-            SetHealthText($"Health: {_healthVar}");
+            Debug.Log(1);
+            SetHealthText($"Health: {newValue.GetValue()}");
         }
 
         private void SetHealthText(string text)

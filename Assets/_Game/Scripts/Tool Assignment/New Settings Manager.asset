@@ -18,4 +18,4 @@ MonoBehaviour:
   MaxSize: 0.955
   MinTorque: 0.235
   MaxTorque: 0.729
-  MaxHealth: 15
+  MaxHealth: 25

@@ -123,25 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &419681600 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2970632031999273636, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
-  m_PrefabInstance: {fileID: 2970632032457142644}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &419681606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 419681600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 337140cb485f7754a953f485cd7973b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Manager: {fileID: 11400000, guid: 1a73d2d05049cd54a87fdfb05535f98d, type: 2}
-  test: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,6 +134,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -226,6 +208,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 337140cb485f7754a953f485cd7973b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Manager: {fileID: 11400000, guid: 1a73d2d05049cd54a87fdfb05535f98d, type: 2}
+  test: 0
 --- !u!1 &1867257715
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,7 +285,7 @@ PrefabInstance:
     - target: {fileID: 2970632031999273633, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
       propertyPath: Calculations
       value: 
-      objectReference: {fileID: 419681606}
+      objectReference: {fileID: 963194229}
     - target: {fileID: 2970632031999273636, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
       propertyPath: m_Icon
       value: 
@@ -487,5 +483,10 @@ PrefabInstance:
       propertyPath: _healthVar
       value: 
       objectReference: {fileID: 11400000, guid: 40cfb1e1b58e0f84a966e03698c56110, type: 2}
-    m_RemovedComponents: []
+    - target: {fileID: 8597208082757243919, guid: c71243f12cdfc2a4282f1805a6098327, type: 3}
+      propertyPath: Calculations
+      value: 
+      objectReference: {fileID: 963194229}
+    m_RemovedComponents:
+    - {fileID: 7180349123523633699, guid: c71243f12cdfc2a4282f1805a6098327, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c71243f12cdfc2a4282f1805a6098327, type: 3}
