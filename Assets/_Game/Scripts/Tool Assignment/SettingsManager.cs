@@ -28,7 +28,7 @@ public class SettingsManager : ScriptableObject
         public int MaxHealth;
 
         [Header("Controll")] 
-        [Range(0, 10)] public float Throttle;
+        [Range(0, 10)] public float Throttle; 
         [Range(0, 10)] public float Roatation;
 
 
