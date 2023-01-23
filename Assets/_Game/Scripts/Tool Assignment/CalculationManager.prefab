@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 300086498400005850}
   - component: {fileID: 3313861110988796891}
-  - component: {fileID: 3748698251108001015}
   m_Layer: 0
   m_Name: CalculationManager
   m_TagString: Untagged
@@ -34,20 +33,6 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3313861110988796891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7426900182896717417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 337140cb485f7754a953f485cd7973b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Manager: {fileID: 11400000, guid: 1a73d2d05049cd54a87fdfb05535f98d, type: 2}
-  CurrentHealth: 0
---- !u!114 &3748698251108001015
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
