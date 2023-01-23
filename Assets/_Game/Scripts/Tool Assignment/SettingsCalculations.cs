@@ -12,6 +12,7 @@ namespace Tool_Assignment
         {
             CurrentHealth = Manager.MaxHealth;
         }
+        //Call this variable where the damage of the ship is inflicted
         public void SetHealth()
         {
             CurrentHealth -= 1;

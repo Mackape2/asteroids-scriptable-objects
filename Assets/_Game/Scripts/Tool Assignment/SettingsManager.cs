@@ -5,7 +5,14 @@ using UnityEngine;
 [CreateAssetMenu]
 public class SettingsManager : ScriptableObject
 {
+    //First create a variable for the SettingsManager in you code
+    //and then add the manager in unity to that variable in unity.
     
+    //Then you simply call the variable that you wish to use in you code.
+    
+    // Ex. public SettingsManager Manager;
+    //
+    // var x = Manager.MaxForce;
     
     [Header("Asteroids")]
     [Header("Force")]
